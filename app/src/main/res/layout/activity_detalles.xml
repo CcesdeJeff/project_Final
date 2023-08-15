@@ -6,13 +6,17 @@
     android:orientation="vertical"
     android:gravity="center"
     android:layout_height="match_parent"
-    tools:context=".Detalles">
+    tools:context=".Detalles"
+    android:background="#D2BEBF">
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="DETALLES" />
+        android:text="DETALLES"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        />
 
     <EditText
         android:id="@+id/edid"
@@ -27,7 +31,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-
         android:ems="10"
         android:inputType="text" />
 
@@ -36,7 +39,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-
         android:ems="10"
         android:inputType="textEmailAddress" />
 
@@ -45,7 +47,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-
         android:ems="10"
         android:inputType="text" />
 

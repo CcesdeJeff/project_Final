@@ -6,13 +6,17 @@
     android:orientation="vertical"
     android:gravity="center"
     android:layout_height="match_parent"
-    tools:context=".Editar">
+    tools:context=".Editar"
+    android:background="#D2BEBF">
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ACTUALIZAR DATOS" />
+        android:text="ACTUALIZAR DATOS"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        />
 
     <EditText
         android:id="@+id/edid"

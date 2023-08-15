@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,13 +8,16 @@
     android:orientation="vertical"
     android:layout_gravity="center"
     android:padding="20dp"
-    tools:context=".Agregar">
+    tools:context=".Agregar"
+    android:background="#D2BEBF">
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="INGRESE DATOS" />
+        android:text="INGRESE DATOS"
+        android:textStyle="bold"
+        />
 
     <EditText
         android:id="@+id/ednombre"
@@ -29,7 +33,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:hint="Ingrese Email"
+        android:hint="Ingrese Descripción"
         android:ems="10"
         android:inputType="textEmailAddress" />
 
@@ -38,7 +42,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:hint="Ingrese Direcciones"
+        android:hint="Fecha a realizar"
         android:ems="10"
         android:inputType="text" />
 
@@ -46,6 +50,7 @@
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="REGISTRAR" />
+        android:text="REGISTRAR"
+        android:backgroundTint="#049CB3"/>
 
 </LinearLayout>
