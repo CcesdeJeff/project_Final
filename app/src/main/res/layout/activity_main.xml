@@ -1,40 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#D2BEBF">
 
-  <com.google.android.material.floatingactionbutton.FloatingActionButton
-      android:id="@+id/floatingActionButton"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:clickable="true"
-      android:onClick="agregar"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.954"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintVertical_bias="0.954"
-      app:srcCompat="@drawable/baseline_add_circle_outline_24"
-      />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="212dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#049CB3"
+        android:text="Ingresar"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="102dp"
+        tools:layout_editor_absoluteY="561dp" />
 
-  <ImageView
-      android:id="@+id/imageView"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      tools:layout_editor_absoluteX="0dp"
-      tools:layout_editor_absoluteY="0dp"
-      tools:srcCompat="@tools:sample/backgrounds/scenic" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTint="#CD4747"
+        android:fontFamily="@font/alike_angular"
+        android:text="Bienvenido"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="74dp" />
 
-  <ListView
-      android:layout_width="match_parent"
-      android:id="@+id/list"
-      android:layout_height="match_parent"
-      tools:layout_editor_absoluteX="0dp"
-      tools:layout_editor_absoluteY="0dp" />
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alike_angular"
+        android:text="a tu lista de tareas"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="153dp" />
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="271dp"
+        android:layout_height="335dp"
+        app:srcCompat="@drawable/welcome"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="215dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -31,9 +31,9 @@ public class Detalles extends AppCompatActivity {
         Intent intent=getIntent();
         position=intent.getExtras().getInt("position");
 
-        edid.setText(MainActivity.usuariosArrayList.get(position).getId());
-        ednombre.setText(MainActivity.usuariosArrayList.get(position).getName());
-        edcorreo.setText(MainActivity.usuariosArrayList.get(position).getCorreo());
-        eddireccion.setText(MainActivity.usuariosArrayList.get(position).getDireccion());
+        edid.setText(Principal.usuariosArrayList.get(position).getId());
+        ednombre.setText(Principal.usuariosArrayList.get(position).getName());
+        edcorreo.setText(Principal.usuariosArrayList.get(position).getCorreo());
+        eddireccion.setText(Principal.usuariosArrayList.get(position).getDireccion());
     }
 }

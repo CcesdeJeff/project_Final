@@ -45,10 +45,10 @@ public class Editar extends AppCompatActivity {
         Intent intent=getIntent();
         position=intent.getExtras().getInt("position");
 
-        edid.setText(MainActivity.usuariosArrayList.get(position).getId());
-        ednombre.setText(MainActivity.usuariosArrayList.get(position).getName());
-        edcorreo.setText(MainActivity.usuariosArrayList.get(position).getCorreo());
-        eddireccion.setText(MainActivity.usuariosArrayList.get(position).getDireccion());
+        edid.setText(Principal.usuariosArrayList.get(position).getId());
+        ednombre.setText(Principal.usuariosArrayList.get(position).getName());
+        edcorreo.setText(Principal.usuariosArrayList.get(position).getCorreo());
+        eddireccion.setText(Principal.usuariosArrayList.get(position).getDireccion());
 
         btnregistrar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,7 +84,7 @@ public class Editar extends AppCompatActivity {
                         public void onResponse(String response) {
                                 Toast.makeText(Editar.this, "Actualizado Correctamente", Toast.LENGTH_SHORT).show();
                                 progressDialog.dismiss();
-                                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                                startActivity(new Intent(getApplicationContext(), Principal.class));
                                 finish();
 
                         }

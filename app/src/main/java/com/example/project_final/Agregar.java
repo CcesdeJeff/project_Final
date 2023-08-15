@@ -71,7 +71,7 @@ public class Agregar extends AppCompatActivity {
                             if (response.equalsIgnoreCase("datas insertados")) {
                                 Toast.makeText(Agregar.this, "registrado correctamente", Toast.LENGTH_SHORT).show();
                                 progressDialog.dismiss();
-                                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                                startActivity(new Intent(getApplicationContext(), Principal.class));
                                 finish();
                             } else {
                                 Toast.makeText(Agregar.this, "Error no se puede registrar", Toast.LENGTH_SHORT).show();

@@ -57,6 +57,7 @@
         android:id="@+id/agreg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ACTUALIZAR" />
+        android:text="ACTUALIZAR"
+        android:backgroundTint="#049CB3"/>
 
 </LinearLayout>
